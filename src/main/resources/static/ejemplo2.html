@@ -5,17 +5,46 @@
         <title>Tienda en linea</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div style="text-align: center; width: 50%; margin: 0 auto;">
-            <h1>Ejemplo 2</h1>
-            <p>Bienvenidos al curso de Web y Patrones</p>
-        </div>
+        <header class="header">
+            <nav class="nav"> <!-- Etiqueta que indica al navegador que es un menu-->
+                <a href="index.html" class="logo nav-link">TechShop</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="index.html">&LeftTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ejemplo3.html">&RightTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="audios.html">Audios</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="iframes.html">Iframes</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="formularios.html">Formularios</a></li>
 
-        <div>
+                </ul>
+
+            </nav>
+
+        </header>
+        <aside id="barraLateral">
+            <h2>Contenido Lateral</h2>
+            <br />
             <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipiscing elit dui pretium, mollis sociis velit per potenti vestibulum mauris rhoncus cum, maecenas libero elementum parturient vel viverra augue tortor. Egestas ultrices fusce dictum blandit magna ac enim, massa nibh nulla ut ad odio praesent ornare, class neque vestibulum eros placerat montes. Pulvinar dictum nam imperdiet felis primis sed ac, mauris torquent interdum ad elementum montes convallis senectus, nascetur cursus varius conubia erat hendrerit. Est dui quisque placerat auctor bibendum aliquet purus neque cursus, et senectus morbi suscipit orci cubilia nunc ut, sem luctus mi ac eleifend porta nascetur blandit.</p>
-            <p style="text-align: center">Nibh eleifend luctus per placerat convallis sapien nam nec, consequat magna quisque praesent vivamus nisl sociosqu bibendum, dictumst tempus magnis ornare urna mus hac. Vestibulum ullamcorper torquent netus turpis mi potenti mus aenean hac integer tempus, ultricies blandit eu rhoncus urna eget dictumst diam phasellus malesuada lectus, eros volutpat purus congue dui pharetra egestas dapibus neque platea. Senectus ornare massa placerat blandit quisque aptent ac mollis luctus, cum tellus hendrerit scelerisque egestas suspendisse dictum morbi fringilla turpis, condimentum neque mus curabitur vitae rutrum eget ut. Interdum mi volutpat magnis lacinia sollicitudin pretium sapien magna fames, rhoncus leo dui eros rutrum vestibulum aliquam accumsan, proin praesent natoque euismod et arcu congue libero.</p>
-            <p style="text-align: left">Potenti augue faucibus non turpis praesent posuere cum volutpat pellentesque a lacinia eu nulla, et dignissim phasellus quis nam pretium vivamus est mollis blandit porttitor. Auctor morbi orci nibh penatibus mus nascetur integer quam curabitur, magna erat vehicula in dapibus nec porttitor enim imperdiet purus, dis maecenas lacinia curae urna sed fermentum non. Tellus vel mattis nisi potenti conubia nec pulvinar hendrerit pellentesque habitant diam nostra, ligula eros aenean himenaeos inceptos class nibh etiam gravida condimentum.</p>
-        </div>
+
+
+        </aside>
+        <section id="contenido">
+            <div style="text-align: center; width: 50%; margin: 0 auto;">
+                <h1>Ejemplo 2</h1>
+                <p>Bienvenidos al curso de Web y Patrones</p>
+            </div>
+
+            <div>
+                <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipiscing elit dui pretium, mollis sociis velit per potenti vestibulum mauris rhoncus cum, maecenas libero elementum parturient vel viverra augue tortor. Egestas ultrices fusce dictum blandit magna ac enim, massa nibh nulla ut ad odio praesent ornare, class neque vestibulum eros placerat montes. Pulvinar dictum nam imperdiet felis primis sed ac, mauris torquent interdum ad elementum montes convallis senectus, nascetur cursus varius conubia erat hendrerit. Est dui quisque placerat auctor bibendum aliquet purus neque cursus, et senectus morbi suscipit orci cubilia nunc ut, sem luctus mi ac eleifend porta nascetur blandit.</p>
+                <p style="text-align: center">Nibh eleifend luctus per placerat convallis sapien nam nec, consequat magna quisque praesent vivamus nisl sociosqu bibendum, dictumst tempus magnis ornare urna mus hac. Vestibulum ullamcorper torquent netus turpis mi potenti mus aenean hac integer tempus, ultricies blandit eu rhoncus urna eget dictumst diam phasellus malesuada lectus, eros volutpat purus congue dui pharetra egestas dapibus neque platea. Senectus ornare massa placerat blandit quisque aptent ac mollis luctus, cum tellus hendrerit scelerisque egestas suspendisse dictum morbi fringilla turpis, condimentum neque mus curabitur vitae rutrum eget ut. Interdum mi volutpat magnis lacinia sollicitudin pretium sapien magna fames, rhoncus leo dui eros rutrum vestibulum aliquam accumsan, proin praesent natoque euismod et arcu congue libero.</p>
+                <p style="text-align: left">Potenti augue faucibus non turpis praesent posuere cum volutpat pellentesque a lacinia eu nulla, et dignissim phasellus quis nam pretium vivamus est mollis blandit porttitor. Auctor morbi orci nibh penatibus mus nascetur integer quam curabitur, magna erat vehicula in dapibus nec porttitor enim imperdiet purus, dis maecenas lacinia curae urna sed fermentum non. Tellus vel mattis nisi potenti conubia nec pulvinar hendrerit pellentesque habitant diam nostra, ligula eros aenean himenaeos inceptos class nibh etiam gravida condimentum.</p>
+            </div>
+
+        </section>
+        <footer id="piePagina">Derechos reservados &COPY; 2023</footer>
     </body>
 </html>
