@@ -1,0 +1,56 @@
+
+/* 
+    Created on : Oct 23, 2023, 1:16:36 AM
+    Author     : bai10
+*/
+
+#encabezado{
+    color: blueviolet;
+    font-weight: bold;
+}
+#tituloPrincipal{
+    color: aquamarine;
+}
+
+.parrafosCentrador {
+    text-align: center;
+    font-weight: bold;
+    color: #666666;
+}
+.texto{
+    color: greenyellow;
+}
+
+p, h1, span {
+    color: blue;
+   
+}
+
+a:link {
+    background-color: green;
+    color: white;
+}
+
+a:visited {
+    background-color: violet;
+    color: white;
+}
+
+a:hover {
+    background-color: darkblue;
+    color: white;
+    
+}
+
+a:active {
+    background-color: red;
+    color: white;
+}
+
+p:nth-child(odd) {
+    background-color: darksalmon;
+}
+
+p:nth-child(even) {
+    background-color: cadetblue;
+}
