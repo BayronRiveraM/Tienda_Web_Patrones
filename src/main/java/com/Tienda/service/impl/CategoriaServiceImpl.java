@@ -1,4 +1,3 @@
-
 package com.Tienda.service.impl;
 
 import com.Tienda.dao.CategoriaDao;
@@ -10,8 +9,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public class CategoriaServiceImpl implements CategoriaService{
-    
+public class CategoriaServiceImpl implements CategoriaService {
+
     @Autowired
     private CategoriaDao categoriaDao;
 
@@ -19,7 +18,7 @@ public class CategoriaServiceImpl implements CategoriaService{
     @Transactional(readOnly = true)
     public List<Categoria> getCategorias(boolean activos) {
         List<Categoria> categorias = categoriaDao.findAll();
-        
+
         if (activos) {
             categorias.removeIf(c -> !c.isActivo());
         }
@@ -30,6 +29,17 @@ public class CategoriaServiceImpl implements CategoriaService{
     public Categoria getCategoria(Categoria categoria) {
         return categoriaDao.findById(categoria.getIdCategoria()).orElse(null);
     }
-    
-    
+
+    @Override
+    @Transactional
+    public void save(Categoria categoria) {
+        categoriaDao.save(categoria);
+    }
+
+    @Override
+    @Transactional
+    public void delete(Categoria categoria) {
+        categoriaDao.delete(categoria);
+    }
+
 }
