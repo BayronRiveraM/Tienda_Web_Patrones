@@ -17,6 +17,8 @@ public interface CategoriaService {
     // Se actualiza el registro si el Id de la categoria NO esta vacio
     public void save(Categoria categoria);
     
-    public void delete(Categoria categoria);
+    public void delete(Categoria categoria); 
+    
+    public List<Categoria> getCategoriasPorDescripcion(String descripcion);
     
 }
